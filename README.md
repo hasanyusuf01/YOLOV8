@@ -5,14 +5,14 @@ The command "!pip install ultralytics" is used to install the Ultralytics packag
 
 After successfully installing the Ultralytics package, you can import and utilize its functionalities in your Python code. The Ultralytics library offers convenient APIs and pre-trained models, making it easier for researchers and developers to perform computer vision tasks and experiments.
 
-1. ##`import os`: 
+##`import os`: 
  imports the `os` module, which provides functions for interacting with the operating system. It will be used to handle file paths in this case.
 
-2. ##`from ultralytics import YOLO`:
+##`from ultralytics import YOLO`:
  imports the `YOLO` class from the `ultralytics` package. The `YOLO` class represents the YOLO object detection model provided by Ultralytics.
 
-3. ##`model = YOLO("yolov8n.yaml")`: 
+##`model = YOLO("yolov8n.yaml")`: 
 creates an instance of the `YOLO` class by initializing it with the path to a configuration file (`yolov8n.yaml`). The configuration file contains the specifications and settings for the YOLO model, such as the architecture, hyperparameters, and other configuration options.
 
-4.##`results = model.train(data=os.path.join(ROOT_DIR, "google_colab_config.yaml"), epochs=100)`: 
+##`results = model.train(data=os.path.join(ROOT_DIR, "google_colab_config.yaml"), epochs=100)`: 
 trains the YOLO model using the `train` method provided by Ultralytics. It takes the path to a data configuration file (`google_colab_config.yaml`) and the number of training epochs (100 in this case). The data configuration file specifies the training data, data augmentation options, and other related settings.
